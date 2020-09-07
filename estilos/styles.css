@@ -83,3 +83,8 @@ p.cita {
 div.cita-oculta:hover p.cita {
   display: block;
 }
+
+.comprar-p {
+  margin-top: 80px;
+  color: white;
+}
