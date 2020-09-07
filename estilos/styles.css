@@ -45,13 +45,14 @@ hr {
 
 @font-face {
   font-family: "letrardr2";
-  src: url("./fonts/chinese-rocks-rg.ttf");
+  src: url("fonts/chinese-rocks-rg.ttf");
 }
 
 .txt {
-  font-family: "letrardr2", serif;
+  font-family: "Bungee", cursive;
   text-align: center;
   color: white;
+  text-shadow: 0 3px 4px rgb(0, 0, 0);
 }
 
 .card-style {
