@@ -57,6 +57,7 @@ hr {
 .card-style {
   background-color: darkred;
   border-radius: 10px;
+  height: 400px;
 }
 .zoom {
   transition: transform 0.2s;
@@ -67,7 +68,7 @@ hr {
 .zoom:hover {
   transform: scale(1.3);
   z-index: 1;
-  background-color: darkred;
+  background-color: #8b0000;
   border-radius: 10px;
 }
 
