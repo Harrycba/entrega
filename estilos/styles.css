@@ -45,7 +45,7 @@ hr {
 
 @font-face {
   font-family: "letrardr2";
-  src: url("/fonts/chinese-rocks-rg.ttf");
+  src: url("fonts/chinese-rocks-rg.ttf");
 }
 
 .txt {
