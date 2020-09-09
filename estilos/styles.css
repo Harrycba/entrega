@@ -53,12 +53,12 @@ hr {
   text-align: center;
   color: white;
   text-shadow: 0 3px 4px rgb(0, 0, 0);
+  width: 100%;
 }
 
 .card-style {
   background-color: darkred;
   border-radius: 10px;
-  height: 400px;
 }
 .zoom {
   transition: transform 0.2s;
