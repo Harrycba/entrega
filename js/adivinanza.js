@@ -1,4 +1,4 @@
-function jugar_ahora() {
+/*function play() {
   var max = 11;
   var min = 1;
   var cant_intentos = 3;
@@ -29,11 +29,38 @@ function jugar_ahora() {
     document.getElementById("rdo").innerHTML =
       "El número era: <strong>" + numeroCorrecto + "</strong>";
   }
-}
+}*/
 
 function play() {
-  var correcta1 = "Caiman";
-  var correcta2 = "Lobo";
-  var correcta3 = "Oso";
-  var cant_intentos = 3;
+  var respCorrecta = "oso";
+  var intentos = 3;
+  var acerto = false;
+  var pregunta;
+  var nombre = document.getElementById("nombre").value;
+
+  if (nombre == "") {
+    alert("¡Recuerda que debes ingresar tu nombre para continuar!");
+  } else {
+    while (intentos > 0 && acerto != true) {
+      pregunta = prompt("¿Que animál da como botín -Una GARRA-?");
+      intentos--;
+      if (pregunta.toLowerCase() == respCorrecta) {
+        alert("¡Excelente! " + nombre + " ¡Haz menorizado la tabla muy bien!");
+        acerto = true;
+      } else if (intentos == 2) {
+        alert(
+          "¡Vamos! " +
+            nombre +
+            " ¡No te desanimes! Aquí va una pista: Es el animal mas grande que aparece en la tabla!"
+        );
+        alert("Le quedan " + intentos + " intentos!");
+      } else if (intentos == 1) {
+        alert("Aquí va la ultima pista: No siempre camina en cuatro patas!");
+      } else {
+        alert("Lo sentimos " + nombre + " perdiste.");
+      }
+    }
+    document.getElementById("rdo").innerHTML =
+      "El animal era el: <strong>" + respCorrecta + "</strong>";
+  }
 }
